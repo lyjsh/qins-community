@@ -13,10 +13,15 @@
     <packaging>pom</packaging>
     <modules>
         <module>service-auth</module>
+        <module>service-redis</module>
     </modules>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.lyjsh</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -25,7 +30,7 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.0.2.RELEASE</version>
+                <version>1.5.10.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

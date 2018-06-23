@@ -12,6 +12,7 @@
         <module>base</module>
         <module>api-gateway</module>
         <module>service-provider</module>
+        <module>common</module>
     </modules>
 
 
@@ -21,5 +22,12 @@
         <java.version>1.8</java.version>
     </properties>
 
-
+    <dependencies>
+        <!--Gson-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+    </dependencies>
 </project>
